@@ -1,33 +1,78 @@
+header {
+	text-align: center;
+	padding: 10px;
+	font-family: verdana;
+	font-size: 175%;
+}
+
 section {
+	box-sizing: border-box;
 	background-color: blue;
 	border: black solid 2px;
+	margin: 8px;
+	font-size: 125%;
+	font-family: courier;
+}
+
+div {
 	box-sizing: border-box;
+	padding: 5px;
 }
 
 @media (min-width: 992px) {
-	section {
+	.menuitem {
 		float: left;
 		width: 33.33%;
+		height: 100%;
 	}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-	section {
+	.menuitem {
 		float: left;
 		width: 50%;
+	}
+
+	#thirditem {
+		width: 100%;
 	}
 }
 
 @media (max-width: 767px) {
-	section {
+	.menuitem {
 		float: left;
 		width: 100%;
 	}
 }
 
+.menuitem {
+	margin: 0px;
+	background-color: white;
+	border: 0px;
+}
+
 .sectionheader {
 	position: relative;
-	top: 0;
-	left: 100%;
+	box-sizing: border-box;
+	left: 70%;
+	text-align: center;
+	background-color: white;
+	border: black solid 2px;
+	width: 30%;
+	padding: 1px;
+	font-family: times;
+	font-style: bold italic;
+}
+
+#firstitem div.sectionheader {
+	background-color: yellow;
+}
+
+#seconditem div.sectionheader {
+	background-color: red;
+}
+
+#thirditem div.sectionheader {
+	background-color: green;
 }
 
